@@ -1,6 +1,7 @@
 ### Testing the model_information endpoint:
 
 * no parameters required
+
 	curl -X 'GET' \
 	  'http://0.0.0.0:8000/model_information' \
 	  -H 'accept: application/json'
@@ -23,6 +24,7 @@ returns
 ### Testing the model_information endpoint:
 
 * with score parameter set to **true**, for outlier point
+
 	curl -X 'POST' \
 	  'http://0.0.0.0:8000/prediction' \
 	  -H 'accept: application/json' \
@@ -43,6 +45,7 @@ returns
 
 
 * without score parameter, for outlier point
+
 	curl -X 'POST' \
 	  'http://0.0.0.0:8000/prediction' \
 	  -H 'accept: application/json' \
@@ -61,6 +64,7 @@ returns
 
 
 * with score parameter set to **false**, for outlier point
+
 	curl -X 'POST' \
 	  'http://0.0.0.0:8000/prediction' \
 	  -H 'accept: application/json' \
@@ -80,6 +84,7 @@ returns
 
 
 * with score parameter set to **true**, for inlier point
+
 	curl -X 'POST' \
 	  'http://0.0.0.0:8000/prediction' \
 	  -H 'accept: application/json' \
