@@ -45,3 +45,10 @@ services:
       - "3000:3000"
       - "9090:9090"
 
+  ml_service:
+    image: "avhadar/lp-service"
+    container_name: "service"
+    expose: 
+      - "8000"
+    ports:
+      - "8000:8000"
