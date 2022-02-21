@@ -20,8 +20,8 @@ app.mount('/metrics', metrics_app)
 
 # create metrics: counters, histograms
 # create counters
-model_info_counter = Counter('model_info', 'Numer of calls to model_information')
-prediction_counter = Counter('prediction', 'Numer of calls to prediction')
+model_info_counter = Counter('model_info', 'Number of calls to model_information')
+prediction_counter = Counter('prediction', 'Number of calls to prediction')
 # create histograms
 h_prediction = Histogram('prediction_response', 'Predicted values')
 h_score_samples = Histogram('score_response', 'Score samples')
