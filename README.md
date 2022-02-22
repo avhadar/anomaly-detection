@@ -3,6 +3,7 @@ Real-time anomaly detection - based on Manning liveProject
 
 Tech stack:
 * Python - main programming language
+  + libraries: pandas, numpy, scikit-learn, requests
 * Docker - for containers
 * FastAPI - for web service creation
 * Prometheus - for metrics collection
